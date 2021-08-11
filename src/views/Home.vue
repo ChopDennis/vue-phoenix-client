@@ -3,13 +3,17 @@
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+import HelloWorld from '../components/HelloWorld'
+import { homeMetaInfo } from '../scripts/meta'
 
-  export default {
-    name: 'Home',
+export default {
+  name: 'Home',
 
-    components: {
-      HelloWorld,
-    },
-  }
+  components: {
+    HelloWorld,
+  },
+  metaInfo() {
+    return homeMetaInfo
+  },
+}
 </script>
