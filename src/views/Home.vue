@@ -1,19 +1,23 @@
 <template>
-  <hello-world />
+  <div class="overflow-x-hidden">
+    <Nav class="z-20" />
+
+    <!-- Hero section -->
+    <HeroSection />
+    <!-- featured section -->
+    <FeaturedSection />
+  </div>
 </template>
-
-<script>
-import HelloWorld from '../components/HelloWorld'
-import { homeMetaInfo } from '../scripts/meta'
-
+    <script>
+import Nav from '@/components/Nav.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import FeaturedSection from '@/components/FeaturedSection.vue'
 export default {
   name: 'Home',
-
   components: {
-    HelloWorld,
-  },
-  metaInfo() {
-    return homeMetaInfo
+    Nav,
+    HeroSection,
+    FeaturedSection,
   },
 }
 </script>
